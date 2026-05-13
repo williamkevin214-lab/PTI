@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Integrador - Sistema Acadêmico</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Sistema Acadêmico</h1>
+        <p>Projeto Integrador - ADS</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Aluno</h2>
+
+            <input type="text" id="nome" placeholder="Nome do aluno">
+            <input type="text" id="matricula" placeholder="Matrícula">
+            <input type="text" id="curso" placeholder="Curso">
+
+            <button onclick="cadastrarAluno()">
+                Cadastrar
+            </button>
+        </section>
+
+        <section class="card">
+            <h2>Alunos Cadastrados</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Matrícula</th>
+                        <th>Curso</th>
+                    </tr>
+                </thead>
+
+                <tbody id="tabelaAlunos">
+
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
